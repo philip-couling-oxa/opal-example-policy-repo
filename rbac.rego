@@ -48,7 +48,7 @@ user_is_guest if {
 
 # user_is_granted is a set of permissions for the user identified in the request.
 # The `permission` will be contained if the set `user_is_granted` for every...
-user_is_granted[permission] if {
+user_is_granted contains permission if {
 	some i, j
 
 	# `role` assigned an element of the user_roles for this user...
